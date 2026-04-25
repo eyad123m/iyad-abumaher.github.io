@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>إياد أبو ماهر - مطور مواقع</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial;
+        background-color: #f5f5f5;
+      }
+      .رأس {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+      .محتوى {
+        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="رأس">
+      <h1>إياد أبو ماهر</h1>
+      <p>مطور مواقع متخصص</p>
+    </div>
+
+    <div class="محتوى">
+      <h2>من أنا</h2>
+      <p>مرحباً، أنا إياد من سوريا أعيش في تركيا، أتعلم تطوير المواقع لأبني مستقبلاً أفضل لعائلتي.</p>
+    </div>
+
+    <div class="محتوى">
+      <h2>مهاراتي</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="محتوى">
+      <h2>تواصل معي</h2>
+      <input id="خانةالاسم" type="text" placeholder="اسمك" style="padding:10px; width:300px; margin:5px;">
+      <br>
+      <input type="email" placeholder="بريدك الإلكتروني" style="padding:10px; width:300px; margin:5px;">
+      <br>
+      <button onclick="قلمرحبا()" style="padding:10px 20px; background-color:#2c3e50; color:white; border:none; margin:5px;">إرسال</button>
+    </div>
+
+    <script>
+      function قلمرحبا() {
+        let اسم = document.getElementById("خانةالاسم").value;
+        if (اسم == "") {
+          alert("من فضلك اكتب اسمك أولاً!");
+        } else {
+          alert("مرحباً " + اسم + "! شكراً لتواصلك معي.");
+        }
+      }
+    </script>
+
+  </body>
+</html>
