@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>مطعم القيصر</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        direction: rtl;
+        background-color: #1a1a1a;
+        color: white;
+      }
+      .رأس {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('https://picsum.photos/1200/600?food') center/cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .رأس h1 {
+        font-size: 60px;
+        color: #f5a623;
+        margin-bottom: 20px;
+      }
+      .رأس p {
+        font-size: 22px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+      }
+      .زر {
+        background-color: #f5a623;
+        color: black;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .قسم {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+      .قسم h2 {
+        font-size: 36px;
+        color: #f5a623;
+        margin-bottom: 40px;
+      }
+      .بطاقات {
+        display: flex;
+        gap: 20px;
+      }
+      .بطاقة {
+        background-color: #2a2a2a;
+        border-radius: 15px;
+        padding: 20px;
+        flex: 1;
+      }
+      .بطاقة img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .بطاقة h3 {
+        color: #f5a623;
+        margin-bottom: 10px;
+      }
+      .بطاقة .سعر {
+        color: #f5a623;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .تذييل {
+        background-color: #111;
+        text-align: center;
+        padding: 30px;
+        color: #888;
+        margin-top: 60px;
+      }
+      @media (max-width: 600px) {
+        .رأس h1 { font-size: 36px; }
+        .بطاقات { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="رأس">
+      <h1>👑 مطعم القيصر</h1>
+      <p>أشهى المأكولات العربية والعالمية</p>
+      <button class="زر">اطلب الآن</button>
+    </div>
+
+    <div class="قسم">
+      <h2>أبرز أطباقنا</h2>
+      <div class="بطاقات">
+        <div class="بطاقة">
+          <img src="https://picsum.photos/400/300?meat" alt="مشاوي">
+          <h3>مشاوي القيصر</h3>
+          <p>أشهى المشاوي المشكلة</p>
+          <div class="سعر">150 ₺</div>
+        </div>
+        <div class="بطاقة">
+          <img src="https://picsum.photos/400/300?rice" alt="أرز">
+          <h3>أرز بالدجاج</h3>
+          <p>أرز بسمتي مع دجاج مشوي</p>
+          <div class="سعر">120 ₺</div>
+        </div>
+        <div class="بطاقة">
+          <img src="https://picsum.photos/400/300?dessert" alt="حلويات">
+          <h3>حلويات شرقية</h3>
+          <p>أحلى الحلويات الشرقية</p>
+          <div class="سعر">80 ₺</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="تذييل">
+      <p>👑 مطعم القيصر - إزمير، تركيا</p>
+      <p>📞 +90 555 123 4567</p>
+    </div>
+
+  </body>
+</html>
